@@ -1,0 +1,74 @@
+/* Site-wide styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#banner, #categories, #New_Arrivals, #sale-banner {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#banner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#New_Arrivals article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 20px;
+}

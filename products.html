@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv-="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMPinkMoonlight - Products</title>
+    <style>
+        #main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #000000;
+        }
+
+        #site-title {
+            flex: 1;
+            text-align: left;
+        }
+
+        #main-nav {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-nav #nav-list {
+            display: flex;
+            gap: 20px;
+        }
+
+        #siteSearch {
+            flex: 1;
+            text-align: center;
+        }
+
+        #categories {
+            text-align: center;
+            border: 2px solid #000000;
+            padding: 10px; 
+}
+        #categories-title {
+            margin-bottom: 30px;
+}
+
+        .category-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category {
+            text-align: center;
+            flex: 1;
+        }
+
+        .category img {
+            width: 280px;
+            height: 280px;
+        }
+
+        .category p {
+            margin-top: 10px;
+        }
+
+        #productFilters {
+            width: 10%;
+            /* adjust this value to fit your design */
+            float: left;
+        }
+
+        #productFilters form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #productFilters label,
+        #productFilters select,
+        #productFilters input {
+            margin-bottom: 10px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        
+        }
+
+        .product {
+            width: 100%;
+        }
+
+        @media (max-width: 200px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 200px) {
+            .products {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .product img {
+            width: 85%;
+            height: 400px;
+        }
+        #newsletter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            border: 1px solid #000000;
+        }
+
+        .center-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid #000000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <h1 id="site-title">AMPinkMoonlight</h1>
+        <input type="search products" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search products">
+        <nav id="main-nav">
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="categories">
+            <h2 id="categories-title">Shop by Categories</h2>
+            <div class="category-container">
+                <div class="category">
+                    <a href="bestsellers.html">
+                        <img src="bestsell.jpeg" alt="Bestsellers">
+                        <p>Bestsellers</p>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="newarrivals.html">
+                        <img src="skeletons.jpeg" alt="New Arrivals">
+                        <p>New Arrivals</p>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="accessories.html">
+                        <img src="butterflies.jpeg" alt="Accessories">
+                        <p>Accessories</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="productFilters">
+        <h2>Product Filters</h2>
+        <div id="filter">
+            <form>
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                    <option value="">Select a size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xlarge">Extra Large</option>
+                </select>
+
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="">Select a color</option>
+                    <option value="red">Red</option>
+                    <option value="pink">Pink</option>
+                    <option value="white">White</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="black">Black</option>
+                </select>
+
+                <label for="price">Price:</label>
+                <input type="range" id="price" name="price" min="0" max="100">
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Products -->
+    <section class="products">
+        <article class="product" id="product1">
+            <img src="icedcoffee.jpeg" alt="Bring me an iced coffee shirt">
+            <h3>Bring Me An Iced Coffee Shirt</h3>
+            <p>Price: $20.00</p>
+            <a href="https://www.etsy.com/listing/1104270683/bring-me-an-iced-coffee-shirt-iced?click_key=c6f72637609240fdd30798aea7a24d93bc392432%3A1104270683&click_sum=b9d1b743&ref=shop_home_active_43"
+                target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product2">
+            <img src="spooky.jpeg" alt="stay spooky ghost shirt">
+            <h3>Stay Spooky Ghost Shirt</h3>
+            <p>Price: $20.00</p>
+            <a href="https://www.etsy.com/listing/1081305515/stay-spooky-shirt-halloween-shirt?click_key=dfeca50c539f5811516e3c5d82f82f8acb299a9a%3A1081305515&click_sum=3eabc0e7&ref=shop_home_active_51"
+                target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product3">
+            <img src="howdy.jpeg" alt="Howdy cowboy sweatshirt">
+            <h3>Howdy Cowboy Sweatshirt</h3>
+            <p>Price: $40.00</p>
+            <a href="https://www.etsy.com/listing/1113115413/howdy-harry-styles-sweatshirt-harry?click_key=5d56e5209f5f1639d9bf4c5b406961e5140d0e4c%3A1113115413&click_sum=04bea476&ref=shop_home_active_31&frs=1"
+                target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product4">
+            <img src="momhoodie.jpeg" alt="Anti social moms club hoodie">
+            <h3>Anti Social Moms Club Hoodie</h3>
+            <p>Price: $38.00</p>
+            <a href="https://www.etsy.com/listing/1086009598/anti-social-moms-club-hoodie?click_key=0266132d4c355c3667911b2544a634686a7b7f11%3A1086009598&click_sum=97e695a6&ref=shop_home_active_46&frs=1"
+                target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product5">
+            <img src="1d5crop.jpeg" alt="We had some good times didn't we band crop top shirt">
+            <h3>We Had Some Good Times, Didn't We? Crop Top</h3>
+            <p>Price: $22.00</p>
+            <a href="https://www.etsy.com/listing/1101492521/we-had-some-good-times-didnt-we-crop-top?click_key=66abbea43873b8dec111e2c7393457202df9d776%3A1101492521&click_sum=c0689678&ref=shop_home_active_44"
+                target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product6">
+            <img src="TPWK.jpeg" alt="Treat People With Kindesss heart shirt">
+            <h3>Treat People With Kindesss Shirt</h3>
+            <p>Price: $22.00</p>
+            <a href="https://www.etsy.com/listing/1104277359/treat-people-with-kindness-shirt-harry?click_key=3f81753cf135bbe8a27620a710fcc9b207fa764e%3A1104277359&click_sum=52d0180d&ref=shop_home_active_42"
+                target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product7">
+            <img src="ggg.jpeg" alt="Gaslight Gatekeep Girlboss Shirt">
+            <h3>Gaslight Gatekeep Girlboss Shirt</h3>
+            <p>Price: $18.00</p>
+            <a href="https://www.etsy.com/listing/1132732060/gaslight-gatekeep-girlboss-funny-shirt?click_key=0e3cbd7af766df4960ce53ebfdf34f1a0e306d6f%3A1132732060&click_sum=3a4fda00&ref=shop_home_active_30"
+                target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product8">
+            <img src="mybody.jpeg" alt="My Body My Choice Butterfly Shirt">
+            <h3>My Body My Choice Butterfly Shirt</h3>
+            <p>Price: $19.00</p>
+            <a href="https://www.etsy.com/listing/1259829665/my-body-my-choice-tshirt-pro-choice?click_key=6c2f626f271a5b25cb8a9aa25b97b88415207343%3A1259829665&click_sum=68a4b5e6&ref=shop_home_active_22"
+                target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product9">
+            <img src="pumpkin.jpg" alt="Tis' The Seasn Pumpkin Coffee Shirt">
+            <h3>Tis' The Season Shirt</h3>
+            <p>Price: $19.00</p>
+            <a href="https://www.etsy.com/listing/1280757491/tis-the-season-pumpkin-and-spice-coffee?click_key=066f07b0470558e9d0134810778bce5b2ffac6f0%3A1280757491&click_sum=22d6e97a&ref=shop_home_active_17"
+            target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product10">
+            <img src="skeletons.jpeg" alt="Tis' The Seasn Skeleton Sweatshirt">
+            <h3>Tis' The Season Skeleton Sweatshirt</h3>
+            <p>Price: $40.00</p>
+            <a href="https://www.etsy.com/listing/1269724198/tis-the-season-to-be-spooky-funny?click_key=9373e4554dddf5ad08ca812a82f89bc41596759d%3A1269724198&click_sum=d1a459c0&ref=shop_home_active_15&frs=1"
+            target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product11">
+            <img src="killercoffee.jpeg" alt="Serial Killer Coffee Shirt">
+            <h3>Serial Killer Coffee Shirt</h3>
+            <p>Price: $19.00</p>
+            <a href="https://www.etsy.com/listing/1269766960/halloween-shirt-serial-killer-shirt?click_key=db5a3eb560c287cac44076fa31c64c78699f570d%3A1269766960&click_sum=ec6ecb6f&ref=shop_home_active_14"
+            target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product12">
+            <img src="angel.jpg" alt="Angel Shirt">
+            <h3>Angel Shirt</h3>
+            <p>Price: $20.00</p>
+            <a href="https://www.etsy.com/listing/1286616065/angel-shirt-cute-halloween-shirt-blue?click_key=54180c27eb193c8a3408904df091d92973a4b70c%3A1286616065&click_sum=cf60de26&ref=shop_home_active_13"
+            target="_blank">View on Etsy</a>
+        </article>
+
+        <article class="product" id="product13">
+            <img src="customdye.jpg" alt="Custom Tie Dye Shirt">
+            <h3>Custom Tie Dye Shirt</h3>
+            <p>Price: $26.00</p>
+            <a href="https://www.etsy.com/listing/1517072318/custom-cropped-tie-dye-t-shirt-b-doll?click_key=a729578b71f8fdbbdc446aac4b36cfba6ff4ec5d%3A1517072318&click_sum=e2a60140&ref=shop_home_active_1"
+            target="_blank">View on Etsy</a>
+        </article>
+    </section>
+    
+    <div style="text-align: center; margin: 20px;">
+        <a href="https://www.etsy.com/shop/AMPinkMoonlight" padding: 15px 30px; text-decoration: none;">SHOP ALL PRODUCTS</a>
+    </div>
+
+    <section id="newsletter">
+        <form>
+            <label for="email">Subscribe to our newsletter: </label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="returns.html">Returns Policy</a></li>
+                <li><a href="shipping.html">Shipping Policy</a></li>
+            </ul>
+        </nav>
+        <select id="location" name="location">
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <!-- add other options as necessary -->
+        </select>
+    </footer>
+</body>
+
+</html>

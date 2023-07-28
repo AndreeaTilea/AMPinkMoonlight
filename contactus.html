@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AMPinkMoonlight - Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>AMPinkMoonlight - Contact Us</h1>
+        <input type="search" id="siteSearch" name="q" aria-label="Search through site content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <form action="/submit_form" method="POST">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+            <li><a href="returns.html">Returns Policy</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+        </ul>
+        </nav>
+        <select id="location" name="location">
+            <!-- Here you can add options for your location selector -->
+        </select>
+    </footer>
+</body>
+</html>
