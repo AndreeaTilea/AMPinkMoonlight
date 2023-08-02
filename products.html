@@ -6,68 +6,39 @@
     <meta http-equiv-="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMPinkMoonlight - Products</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        #main-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: 2px solid #000000;
-        }
-
-        #site-title {
-            flex: 1;
-            text-align: left;
-        }
-
-        #main-nav {
-            flex: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #main-nav #nav-list {
-            display: flex;
-            gap: 20px;
-        }
-
-        #siteSearch {
-            flex: 1;
-            text-align: center;
-        }
 
         #categories {
             text-align: center;
-            border: 2px solid #000000;
-            padding: 10px; 
-}
+            padding: 10px;
+            flex: 1;
+            margin: 15px;
+        }
+        #categories img {
+            width:70%;
+            height:450px;
+            border-radius: 4px;
+        }
+
         #categories-title {
             margin-bottom: 30px;
-}
-
-        .category-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
+
 
         .category {
             text-align: center;
             flex: 1;
+            margin: 15px;
         }
 
-        .category img {
-            width: 280px;
-            height: 280px;
-        }
 
-        .category p {
+        #categories p {
             margin-top: 10px;
         }
 
         #productFilters {
             width: 10%;
-            /* adjust this value to fit your design */
             float: left;
         }
 
@@ -81,11 +52,12 @@
         #productFilters input {
             margin-bottom: 10px;
         }
+
         .products {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-        
+
         }
 
         .product {
@@ -105,15 +77,15 @@
         }
 
         .product img {
-            width: 85%;
-            height: 400px;
+            width: 75%;
+            height: 450px;
         }
+
         #newsletter {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 20vh;
-            border: 1px solid #000000;
+            height: 20%;
         }
 
         .center-form {
@@ -121,11 +93,11 @@
             flex-direction: column;
             align-items: center;
         }
+
         footer {
             display: flex;
             justify-content: space-between;
             padding: 20px;
-            border: 1px solid #000000;
         }
 
         nav ul {
@@ -143,7 +115,8 @@
 <body>
     <header id="main-header">
         <h1 id="site-title">AMPinkMoonlight</h1>
-        <input type="search products" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search products">
+        <input type="search products" id="siteSearch" name="q" aria-label="Search through site content"
+            placeholder="Search products">
         <nav id="main-nav">
             <ul id="nav-list">
                 <li><a href="index.html">Home</a></li>
@@ -156,7 +129,7 @@
 
     <main>
         <section id="categories">
-            <h2 id="categories-title">Shop by Categories</h2>
+            <h2 id="categories-title">Shop by Category</h2>
             <div class="category-container">
                 <div class="category">
                     <a href="bestsellers.html">
@@ -283,7 +256,7 @@
             <h3>Tis' The Season Shirt</h3>
             <p>Price: $19.00</p>
             <a href="https://www.etsy.com/listing/1280757491/tis-the-season-pumpkin-and-spice-coffee?click_key=066f07b0470558e9d0134810778bce5b2ffac6f0%3A1280757491&click_sum=22d6e97a&ref=shop_home_active_17"
-            target="_blank">View on Etsy</a>
+                target="_blank">View on Etsy</a>
         </article>
 
         <article class="product" id="product10">
@@ -291,7 +264,7 @@
             <h3>Tis' The Season Skeleton Sweatshirt</h3>
             <p>Price: $40.00</p>
             <a href="https://www.etsy.com/listing/1269724198/tis-the-season-to-be-spooky-funny?click_key=9373e4554dddf5ad08ca812a82f89bc41596759d%3A1269724198&click_sum=d1a459c0&ref=shop_home_active_15&frs=1"
-            target="_blank">View on Etsy</a>
+                target="_blank">View on Etsy</a>
         </article>
 
         <article class="product" id="product11">
@@ -299,7 +272,7 @@
             <h3>Serial Killer Coffee Shirt</h3>
             <p>Price: $19.00</p>
             <a href="https://www.etsy.com/listing/1269766960/halloween-shirt-serial-killer-shirt?click_key=db5a3eb560c287cac44076fa31c64c78699f570d%3A1269766960&click_sum=ec6ecb6f&ref=shop_home_active_14"
-            target="_blank">View on Etsy</a>
+                target="_blank">View on Etsy</a>
         </article>
 
         <article class="product" id="product12">
@@ -307,7 +280,7 @@
             <h3>Angel Shirt</h3>
             <p>Price: $20.00</p>
             <a href="https://www.etsy.com/listing/1286616065/angel-shirt-cute-halloween-shirt-blue?click_key=54180c27eb193c8a3408904df091d92973a4b70c%3A1286616065&click_sum=cf60de26&ref=shop_home_active_13"
-            target="_blank">View on Etsy</a>
+                target="_blank">View on Etsy</a>
         </article>
 
         <article class="product" id="product13">
@@ -315,13 +288,14 @@
             <h3>Custom Tie Dye Shirt</h3>
             <p>Price: $26.00</p>
             <a href="https://www.etsy.com/listing/1517072318/custom-cropped-tie-dye-t-shirt-b-doll?click_key=a729578b71f8fdbbdc446aac4b36cfba6ff4ec5d%3A1517072318&click_sum=e2a60140&ref=shop_home_active_1"
-            target="_blank">View on Etsy</a>
+                target="_blank">View on Etsy</a>
         </article>
     </section>
-    
+        
     <div style="text-align: center; margin: 20px;">
-        <a href="https://www.etsy.com/shop/AMPinkMoonlight" padding: 15px 30px; text-decoration: none;">SHOP ALL PRODUCTS</a>
+        <a href="https://www.etsy.com/shop/AMPinkMoonlight" class="btn-8">SHOP ALL PRODUCTS</a>
     </div>
+
 
     <section id="newsletter">
         <form>
@@ -336,7 +310,7 @@
         <nav>
             <ul>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="returns.html">Returns Policy</a></li>
+                <li><a href="return.html">Return Policy</a></li>
                 <li><a href="shipping.html">Shipping Policy</a></li>
             </ul>
         </nav>
