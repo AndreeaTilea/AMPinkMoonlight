@@ -2,54 +2,44 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv-="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMPinkMoonlight</title>
-    <style> 
+
+  <!-- Link to an external style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+   <!-- Link to an external style sheet -->
+   <style> 
         #main-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid #000000;
+}
+#main-header nav ul {
+    display: flex; /* Changes the list items to a row */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
 }
 
-        #main-header nav ul {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            gap: 15px;
-            border: 3px solid #000000;
-}
-        #banner img {
-            width: 100%;
-            height: 475px;
-            object-fit: cover;
-            border: 1px solid #000000;
-}
-        #banner-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-}
+
         #categories {
             display: flex;
             justify-content: space-between;
 }
 
-        #categories img {
-            width: 100%; 
-            height: 400px; 
-            object-fit: cover;
-}
 
         #categories a {
             flex: 1; /* make each link element take up equal space */
             margin-right: 10px; /* space between the images */
-            border: 0.5px solid #000000;
 }
-
+        #categories img {
+            width: 100%; 
+            height: 80%; 
+            object-fit: cover;
+}
         #categories a:last-child {
             margin-right: 0; /* remove the right margin for the last image */
 }
@@ -79,47 +69,26 @@
             margin-right: 0;
         }
         #New_Arrivals img {
-            width: 100%;
-            height: 350px;
-        }
-        #sale-banner img {
-            width: 100%;
-            height: 550px;
-            object-fit: cover;#sale-banner
-            border: 1px solid #000000;
-        }
+    width: 100%;
+    height: 450px; /* maintain the aspect ratio */
+}
+
         #newsletter {
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            border: 1px solid #000000;
         }
-        footer {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            border: 1px solid #000000;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+    
     </style>
 
 </head>
-    <body>
-         <header>
-            <div>
-            <header id="main-header" />
+<body>
+            <header id="main-header">
             <h1>AMPinkMoonlight</h1>
-            <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search here">
+            <div class="search-container"> <!-- Wrapping the search bar in a div container -->
+                <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search here">
+                </div>
             <nav>
                 <ul>
                     <li><a href="products.html">Products</a></li>
@@ -134,55 +103,59 @@
     <main>
         <div id="banner">
             <img src="mainbanner.jpg" alt="Welcome Banner">
+            <!-- Buttons -->
+            <div class="banner-buttons">
+                <a href="sales.html" class="btn-8"><span>Browse Sales</span></a>
+                <a href="products.html" class="btn-8"><span>All Products</span></a>
+            </div>
         </div>
-        <!-- Buttons -->
-        <div>
-        <div id="banner-buttons">
-            <a href="sales.html"><button type="button">Browse Sales</button></a>
-            <a href="products.html"><button type="button">All Products</button></a>
-        </div>
+            
 
         <section id="categories">
-            <a href="bestsellers.html">
-                <img src="howdy.jpeg" alt="Bestsellers">
-                <h3>Bestsellers</h3>
-            </a>
-            <a href="seasonal.html">
-                <img src="killercoffee.jpeg" alt="Seasonal">
-                <h3>Seasonal</h3>
-            </a>
-            <a href="Fandoms.html">
-                <img src="harryween.jpeg" alt="Fandoms">
-                <h3>Fandoms</h3>
+            <div class="categories-container">
+                <a href="bestsellers.html">
+                    <img src="howdy.jpeg" alt="Bestsellers">
+                    <h3>Bestsellers</h3>
+                </a>
+                <a href="seasonal.html">
+                    <img src="killercoffee.jpeg" alt="Seasonal">
+                    <h3>Seasonal</h3>
+                </a>
+                <a href="Fandoms.html">
+                    <img src="harryween.jpeg" alt="Fandoms">
+                    <h3>Fandoms</h3>
+                </a>
+            </div>
         </section>
+        
+        
 
         <section id="New_Arrivals">
-            <h2>New Arrivals!</h2>
+            <h1>New Arrivals!</h1>
                 <div>
                     <article>
                             <img src="customdye.jpg" alt="customizable tie dye crop top">
-                            <h2>Customizable Tie Dye Crop Top</h2>
+                            <h2><a href="https://www.etsy.com/listing/1517072318/custom-cropped-tie-dye-t-shirt-b-doll?click_key=b87483632bd1a03c4cec2df355e783d0da76505c%3A1517072318&click_sum=3e2e0900&ref=shop_home_active_1">Customizable Tie Dye Crop Top</h2>
                             <p>$26.00</p>
-                        </a>
                     </article>
                     <article>
                         <img src="antimom.jpg" alt="Anti Social Moms Club Hoodie">
-                        <h2>Anti Social Moms Club Hoodie</h2>
+                        <h2><a href="https://www.etsy.com/listing/1086009598/anti-social-moms-club-hoodie?click_key=7554e8d81f5a187cdd0d78da68d53ab29fab8723%3A1086009598&click_sum=54d3c0df&ref=shop_home_active_45&frs=1">Anti Social Moms Club Hoodie</h2>
                         <p>$42.00</p>
                     </article>
                     <article>
                         <img src="pumpkin.jpg" alt="Tis' The Season - Pumpkin and Coffee Shirt ">
-                        <h2>Tis' The Season Shirt</h2>
+                        <h2><a href="https://www.etsy.com/listing/1280757491/tis-the-season-pumpkin-and-spice-coffee?click_key=c1cbe04a0e3724d519c0df77d175cc9d5a10a938%3A1280757491&click_sum=c7b55756&ref=shop_home_active_16">Tis' The Season Shirt</h2>
                         <p>$20.00</p>
                     </article>
                     <article>
                         <img src="screams.jpg" alt="No You Hang Up Hoodie">
-                        <h2>No You Hang Up Hoodie</h2>
+                        <h2><a href="https://www.etsy.com/listing/1086018654/no-you-hang-up-scream-hoodie-ghost-movie?click_key=02a812e88f6f0f85c7e7a48fa15bbe0a1710e434%3A1086018654&click_sum=bd85691e&ref=shop_home_active_37&frs=1">No You Hang Up Hoodie</h2>
                         <p>$42.00</p>
                     </article>
                     <article>
                         <img src="angel.jpg" alt="Angel Shirt">
-                        <h2>Angel Shirt</h2>
+                        <h2><a href="https://www.etsy.com/listing/1286616065/angel-shirt-cute-halloween-shirt-blue?click_key=c6657d94ba78d6073e2703851444d8196c28702d%3A1286616065&click_sum=30bae924&ref=shop_home_active_12">Angel Shirt</h2>
                         <p>$22.00</p>
                     </article>
             </div>        
@@ -191,13 +164,13 @@
         <section id="sale-banner">
             <article style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <img src="salebanner.jpeg" alt="Sales Banner">
-                <button style="margin-top: 10px;">Shop Sale</button>
+                <button class="btn-8" style="margin-top: 10px;"><span>Shop Sale</span></button> 
             </article>
         </section>
 
         <section id="newsletter">
             <div class="newsletter-content">
-                <p>Grab an extra 5% discount by subscribing to our monthly newsletter:</p>
+                <p>Grab an extra 5% discount by subscribing to our monthly newsletter</p>
                 <form>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
@@ -209,9 +182,9 @@
 
     <footer>
         <nav>
-            <ul>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="returns.html">Returns Policy</a></li>
+            <ul style="display: flex; justify-content: flex-start;">
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="return.html">Return Policy</a></li>
                 <li><a href="shipping.html">Shipping Policy</a></li>
             </ul>
         </nav>
@@ -221,6 +194,6 @@
             <option value="ca">Canada</option>
             <!-- add other options -->
         </select>
-    </footer>
+    </footer>    
 </body>
 </html>
