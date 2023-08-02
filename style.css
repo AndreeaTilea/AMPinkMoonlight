@@ -1,74 +1,331 @@
-/* Site-wide styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+
+/* Font and color setup */
 body {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    background: linear-gradient(135deg, #FAF0F4 0%, #FFC1C8 100%);
+}
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3 {
+    color:  #FF6B98;
+}
+h1, h2, h3, a {
+    font-family: 'Playfair Display', serif;
 }
 
 a {
+    color: #FF6B98;
     text-decoration: none;
 }
 
-/* Header styles */
-header {
+a:hover {
+    color: #FF9AA2;
+}
+
+
+/* Header */
+#main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1rem;
+    background-color: #FAF0F4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: flex-end;  /* This will push the navigation to the right */
 }
 
-header h1 {
-    margin: 0;
+
+
+
+
+
+#main-header h1 {
+    color:  #FF6B98;
 }
 
-nav ul {
-    overflow: hidden;
-    float: left;
-    margin: 10px;
-    display: flex;
-    gap: 20px;
+#main-header .search-container {
+    flex-grow: 1;
+    margin: 0 1rem;
 }
-
-/* Main content styles */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-#banner, #categories, #New_Arrivals, #sale-banner {
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-#banner-buttons {
+.search-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
+#siteSearch {
+    padding: 1%;
+    border-radius: 4px;
+    border: none;
+    width: 60%;
+    margin: auto; /* center the search bar */
+}
+
+nav ul li a:hover {
+    color: #FF6B99;
+}
+
+/* Content */
+#banner, #categories, #New_Arrivals, #sale-banner, #newsletter {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #FAF0F4;
+}
+
+#New_Arrivals h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust to create space between the title and images */
+}
 #New_Arrivals article {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the children horizontally */
+    margin-bottom: 20px; /* Add space between each article */
+}
+
+#New_Arrivals img {
+    margin-bottom: 10px; /* Add space between image and h2 */
+    float: left;
+}
+#New_Arrivals p {
+    text-indent: 20px;
+}
+
+#categories {
+    text-align: center;
+    padding: 10px;
+}
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-container a {
+    flex: 1; /* make each link element take up equal space */
+    margin-right: 10px; /* space between the images */
+}
+
+.category-container {
+    display: flex;   /* This will set the categories to display in a row */
+    flex-wrap: wrap; /* This allows them to wrap to a new row if needed */
+    justify-content: space-around; /* This centers them and allows for space in between */
+}
+
+.category {
+    flex: 1 1 auto; /* This property tells the browser that it can adjust the width of the item */
+    margin: 15px;
+    text-align: center;
+}
+
+#categories a {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#categories-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color:#FF87A2;
+    text-align: center;
+    padding: 4.5rem 0;  /* Reduced padding */
+}
+
+#categories {
+    margin-top: 5rem;  /* Reduced margin */
+    padding: 10px; 
+}
+
+#categories img {
+    width: 90%;
+    height: 400px;
+    border-radius: 4px;
+}
+
+#categories h3 {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(315deg,#FF87A2);
+    background-color: #FFC1C8;
+    line-height: 42px;
+    padding: 0 20px;
+    color: #FFF;
+    text-shadow: none;
+    border-radius: 4px;
+    text-align: center; 
+    transform: translate(-50%, -50%); 
+}
+
+#New_Arrivals h2, #New_Arrivals p {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+
+#categories h3:hover,
+#categories h3:focus,
+#categories h3:active {
+    color: #FFF;
+}
+
+#banner img, #categories img, #New_Arrivals img, #sale-banner img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+}
+/* Button styles */
+.btn-8 {
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff6347;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-image: linear-gradient(315deg,  #FF6B98, #FF87A2);
+    background-color: #FFC1C8;
+    line-height: 42px;
+    padding: 0 20px;
+    border: none;
+    color: #FFF;
+}
+
+.btn-8:hover {
+    background-color: #dc3545;
+}
+.banner-buttons {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    gap: 10px 
+}
+
+.btn-8:hover {
+    color: #FFF;
+}
+
+.btn-8:focus,
+.btn-8:active {
+    color: #FFF;
+}
+#sale-banner img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    border: 1px solid #000000;
+}
+/* Newsletter */
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    justify-content: center;
+    text-align: center; /* Center the text */
+    padding: 1rem;
+}
+
+#newsletter .newsletter-content p {
+    margin-bottom: 1rem; /* Add space between the text and the form */
 }
 
 #newsletter form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    gap: 1rem; /* Add space between the form elements */
 }
 
-/* Footer styles */
+#newsletter label {
+    margin-right: 0.5rem; /* Add some space between the label and the input field */
+}
+#newsletter input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 80%;
+}
+
+#newsletter input[type="submit"] {
+    padding: 0.5rem;
+    background-color: #FF6B98; /* This sets the background color to pink */
+    border: none;
+    border-radius: 4px; /* This gives the button rounded corners */
+    color: white;
+    cursor: pointer; /* This changes the mouse cursor to a hand icon when hovering over the button */
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; /* This adds a smooth transition effect when the button color changes */
+}
+
+#newsletter input[type="submit"]:hover {
+    background-color: #FF87A2;
+}
+
+
+.product {
+    text-align: center;
+    width: 100%;
+}
+
+.product img {
+    display: block;
+    margin: 0 auto;
+}
+
+.product-info {
+
+    margin-top: 10px; 
+}
+
+.product-info .price {
+    text-align: center; 
+}
+
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-between; /* Aligned on the left and right */
+    align-items: center;
+    padding: 1rem;
+    background-color: #FFC1C8;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer nav ul {
-    display: flex;
-    gap: 20px;
+    display: flex; /* To arrange the list items in a row */
+    justify-content: flex-start; /* Aligns items to the start */
+    list-style: none; /* Removes the bullet points */
+    padding: 0; /* Removes the default padding */
+}
+
+footer nav ul li:not(:last-child) {
+    margin-right: 20px; /* This adds space between the links */
+}
+
+footer a: hover {
+    background-color:  #FF87A2;
+    color: #FAF0F4;
 }
