@@ -4,6 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AMPinkMoonlight - Contact Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            background: linear-gradient(135deg, #FAF0F4 0%, #FFC1C8 100%);
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #FAF0F4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header input[type="search"] {
+            margin-right: 1rem;
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        header nav ul li a {
+            color: #FF6B98;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            color: #FF9AA2;
+        }
+
+        main {
+            flex: 1;
+            margin: 2rem;
+        }
+
+        #contact-us {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh; /* Adjust this value as needed */
+        }
+
+        #contact-us form {
+            background-color: #FFF;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        #contact-us form input[type="text"],
+        #contact-us form input[type="email"],
+        #contact-us form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        #contact-us form textarea {
+            height: 200px; /* Adjust this value as needed */
+        }
+
+        #contact-us form input[type="submit"] {
+            padding: 0.5rem;
+            background-color: #FF6B98; 
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem; 
+            transition: background-color 0.3s ease; 
+        }
+
+        #contact-us form input[type="submit"]:hover {
+            background-color: #FF87A2;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #FFC1C8;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        footer nav ul li a {
+            color: #FAF0F4;
+            text-decoration: none;
+        }
+
+        footer nav ul li a:hover {
+            color: #FF87A2;
+        }
+
+        footer select {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,31 +142,35 @@
 
     <main>
         <section id="contact-us">
-            <h2>Contact Us</h2>
-            <form action="/submit_form" method="POST">
-                <label for="name">Your Name:</label><br>
-                <input type="text" id="name" name="name"><br>
+            <div>
+                <h2>Contact Us</h2>
+                <form action="/submit_form" method="POST">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
 
-                <label for="email">Your Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+                    <label for="email">Your Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
 
-                <input type="submit" value="Submit">
-            </form>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
         <nav>
             <ul>
-            <li><a href="returns.html">Returns Policy</a></li>
-            <li><a href="shipping.html">Shipping Policy</a></li>
-        </ul>
+                <li><a href="returns.html">Returns Policy</a></li>
+                <li><a href="shipping.html">Shipping Policy</a></li>
+            </ul>
         </nav>
         <select id="location" name="location">
-            <!-- Here you can add options for your location selector -->
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
         </select>
     </footer>
 </body>
