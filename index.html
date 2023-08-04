@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMPinkMoonlight</title>
-
-  <!-- Link to an external style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-   <!-- Link to an external style sheet -->
    <style> 
-        #main-header {
+    
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flex-container-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #main-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -71,7 +81,7 @@
         #New_Arrivals img {
     width: 100%;
     height: 450px; /* maintain the aspect ratio */
-}
+        }
 
         #newsletter {
             display: flex;
@@ -79,7 +89,24 @@
             align-items: center;
             text-align: center;
         }
-    
+        
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+              
+
     </style>
 
 </head>
@@ -97,7 +124,6 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
 
     <main>
@@ -134,7 +160,7 @@
             <h1>New Arrivals!</h1>
                 <div>
                     <article>
-                            <img src="customdye.jpg" alt="customizable tie dye crop top">
+                            <img src="Customs.jpeg.JPG" alt="customizable tie dye crop top">
                             <h2><a href="https://www.etsy.com/listing/1517072318/custom-cropped-tie-dye-t-shirt-b-doll?click_key=b87483632bd1a03c4cec2df355e783d0da76505c%3A1517072318&click_sum=3e2e0900&ref=shop_home_active_1">Customizable Tie Dye Crop Top</h2>
                             <p>$26.00</p>
                     </article>
@@ -182,7 +208,7 @@
 
     <footer>
         <nav>
-            <ul style="display: flex; justify-content: flex-start;">
+            <ul>
                 <li><a href="contactus.html">Contact Us</a></li>
                 <li><a href="return.html">Return Policy</a></li>
                 <li><a href="shipping.html">Shipping Policy</a></li>
