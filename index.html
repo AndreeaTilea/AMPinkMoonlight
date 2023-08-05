@@ -78,11 +78,29 @@
         #New_Arrivals article:last-child {
             margin-right: 0;
         }
+
+
         #New_Arrivals img {
     width: 100%;
-    height: 450px; /* maintain the aspect ratio */
-        }
+    height: 450px;
+}
 
+/* Media queries for responsive design */
+@media (max-width: 768px) { /* Adjust as needed for the breakpoint */
+    #New_Arrivals img {
+        width: 100%;
+        height: auto;
+    }
+
+    #New_Arrivals article {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #New_Arrivals div {
+        flex-direction: column;
+    }
+}
         #newsletter {
             display: flex;
             justify-content: center;
@@ -143,7 +161,7 @@
                     <img src="howdy.jpeg" alt="Bestsellers">
                     <h3>Bestsellers</h3>
                 </a>
-                <a href="https://www.etsy.com/shop/AMPinkMoonlight?ref=seller-platform-mcnav&section_id=44279880">
+                <a href="seasonal.html">
                     <img src="pumpkin.jpg" alt="Seasonal">
                     <h3>Seasonal</h3>
                 </a>
@@ -223,3 +241,4 @@
     </footer>    
 </body>
 </html>
+
