@@ -226,6 +226,7 @@ nav ul li a:hover {
     margin: 0 10px;
 }
 
+
 #newsletter {
     background: #FFF;
     color: #FF6B98;
@@ -273,6 +274,31 @@ nav ul li a:hover {
         width: 60%;
     }
 }
+#Items-On-Sale {
+    padding: 2rem;
+    background: #FAF0F4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+#sale-title {
+    color: var(--accentColor);
+    text-align: center;
+    font-size: 2rem; /* you can adjust size as needed */
+}
+
+@media (max-width: 768px) {
+    #Items-On-Sale {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    #sale-title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     body {
@@ -296,6 +322,9 @@ nav ul li a:hover {
     body {
         font-size: var(--font-size-xlarge);
     }
+}
+.original-price, .sale-price {
+    margin-bottom: 5px; /* adjust this value as necessary */
 }
 
 /* other styles */
