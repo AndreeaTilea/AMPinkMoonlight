@@ -285,7 +285,7 @@ nav ul li a:hover {
 #sale-title {
     color: var(--accentColor);
     text-align: center;
-    font-size: 2rem; /* you can adjust size as needed */
+    font-size: 2rem; 
 }
 
 @media (max-width: 768px) {
@@ -324,7 +324,7 @@ nav ul li a:hover {
     }
 }
 .original-price, .sale-price {
-    margin-bottom: 5px; /* adjust this value as necessary */
+    margin-bottom: 5px; 
 }
 
 /* other styles */
