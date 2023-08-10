@@ -41,6 +41,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: start;
+    box-sizing: border-box; /* This is crucial! */
 }
 
 #main-header .search-container {
