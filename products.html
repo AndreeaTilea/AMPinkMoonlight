@@ -51,22 +51,6 @@
         }
 
 
-        #productFilters {
-            width: 10%;
-            float: left;
-        }
-
-        #productFilters form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #productFilters label,
-        #productFilters select,
-        #productFilters input {
-            margin-bottom: 10px;
-        }
-
         .products {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -147,7 +131,8 @@
             padding: 20px;
             background-color: #FAF0F4;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 100%
+            box-sizing: border-box; /* This is crucial! */
+            width: 100%;
             }
             @media (max-width: 768px) {
             .category {
@@ -167,7 +152,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sales.html">Sales</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -324,7 +309,7 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
                 <li><a href="return.html">Return Policy</a></li>
                 <li><a href="shipping.html">Shipping Policy</a></li>
             </ul>
