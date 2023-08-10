@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AMPinkMoonlight - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            font-family: 'Playfair Display', serif;
-            color: #333;
-            background: linear-gradient(135deg, #FAF0F4 0%, #FFC1C8 100%);
-            margin: 0;
-        }
-
+        #siteSearch {
+            width: 100%;  /* Full width on small screens */
+            max-width: 400px;  /* But not more than 400px wide */
+            }
+        
         header {
             display: flex;
+            flex-wrap: wrap; 
             justify-content: space-between;
             align-items: center;
             padding: 1rem;
             background-color: #FAF0F4;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        header input[type="search"] {
-            margin-right: 1rem;
-        }
-
-        header nav ul {
+        #main-header nav ul {
+        display: flex; 
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+    }
+    body {
             display: flex;
-            gap: 1rem;
-            list-style: none;
+            flex-direction: column;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            background: linear-gradient(135deg, #FAF0F4 0%, #FFC1C8 100%);
+            margin: 20px 0 0;
+            padding-top: 125px;
         }
-
-        header nav ul li a {
-            color: #FF6B98;
-            text-decoration: none;
-        }
-
-        header nav ul li a:hover {
-            color: #FF9AA2;
-        }
-
+    
         main {
             flex: 1;
-            margin: 2rem;
+            margin: 1rem;
         }
 
+
+
+        .content-wrapper {
+            flex: 1;  
+        }
+
+       
         #contact-us {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 80vh; /* Adjust this value as needed */
+            min-height: 80vh;
         }
+
 
         #contact-us form {
             background-color: #FFF;
@@ -73,14 +75,15 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             margin-bottom: 1rem;
+            box-sizing: border-box;
         }
 
         #contact-us form textarea {
-            height: 200px; /* Adjust this value as needed */
+            height: 200px;
         }
 
-        #contact-us form input[type="submit"] {
-            padding: 0.5rem;
+        #contact-us form button {
+            padding: 0.5rem 1rem;
             background-color: #FF6B98; 
             border: none;
             border-radius: 4px;
@@ -91,75 +94,71 @@
             transition: background-color 0.3s ease; 
         }
 
-        #contact-us form input[type="submit"]:hover {
+        #contact-us form button:hover {
             background-color: #FF87A2;
         }
 
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
         footer {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            background-color: #FFC1C8;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #FAF0F4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            box-sizing: border-box; /* This is crucial! */
+            }
+
+            nav ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        footer nav ul {
-            display: flex;
-            gap: 1rem;
-            list-style: none;
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
-
-        footer nav ul li a {
-            color: #FAF0F4;
-            text-decoration: none;
-        }
-
-        footer nav ul li a:hover {
-            color: #FF87A2;
-        }
-
-        footer select {
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+            
+        
     </style>
 </head>
 <body>
-    <header>
-        <h1>AMPinkMoonlight - Contact Us</h1>
-        <input type="search" id="siteSearch" name="q" aria-label="Search through site content">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="Sales.html">Sales</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+    <div class="content-wrapper"> 
+    <header id="main-header">
+        <h1 id="site-title">AMPinkMoonlight</h1>
+        <input type="search" id="siteSearch" name="q" aria-label="Search through site content"
+        placeholder="Search products">
+    <nav id="main-nav">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="Sales.html">Sales</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
     </header>
-
-    <main>
-        <section id="contact-us">
-            <div>
-                <h2>Contact Us</h2>
-                <form action="/submit_form" method="POST">
-                    <label for="name">Your Name:</label><br>
-                    <input type="text" id="name" name="name"><br>
-
-                    <label for="email">Your Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
-
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message"></textarea><br>
-
-                    <input type="submit" value="Submit">
-                </form>
+   
+    <main id="contact-us">
+        <form action="#" method="POST">
+            <h1>Contact Us</h1>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-        </section>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </main>
-
+    </div>
     <footer>
         <nav>
             <ul>

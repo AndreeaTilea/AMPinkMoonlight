@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AMPinkMoonlight - Return Policy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+     
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            background: linear-gradient(135deg, #FAF0F4 0%, #FFC1C8 100%);
+            justify-content: space-between;
+            height: 100vh;
+            margin: 20px 0 0;
+            padding-top: 160px;
+        }
+        header input[type="search"] {
+            margin-right: 1rem;
+        }
+        #site-title {
+        margin-bottom: 1rem; /* space between title and search input */
+        }
+       
+        @media (min-width: 600px) {
+            #siteSearch {
+                width: 50%; 
+            }
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #FAF0F4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            box-sizing: border-box; /* This is crucial! */
+            text-align: center;
+        }
+        #siteSearch {
+            width: 100%;  /* Full width on small screens */
+            max-width: 400px;  /* But not more than 400px wide */
+            }
+
+            @media (min-width: 600px) {
+            /* On screens that are 600px wide or more, make the search bar smaller */
+            #siteSearch {
+            width: 50%;  /* 50% of the container's width */
+            }
+        }
+
+            nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<header id="main-header">
+    <h1 id="site-title">AMPinkMoonlight</h1>
+    <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search products">
+    <nav id="main-nav">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="return-policy">
+        <h2>Returns, Exchanges, and Cancellations:</h2>
+        <ul>
+            <li><strong>Returns & Exchanges:</strong> We prioritize the satisfaction of our customers. However, due to the nature of our products, we do not accept returns or exchanges, except in cases where the wrong item has been sent by the seller. If such an unfortunate incident occurs, please inform us as soon as possible so we can set things right.</li>
+            <li><strong>Cancellations:</strong> We understand that sometimes plans change. If you wish to cancel your order, please do so before it has been shipped. Once dispatched, we won't be able to process cancellations.</li>
+        </ul>
+
+        <h2>Sizing Concerns:</h2>
+        <p>We want your purchase to fit you perfectly! To avoid any sizing mishaps:</p>
+        <ul>
+            <li><strong>Measurement:</strong> Ensure you check our sizing chart or details provided in the product description.</li>
+            <li><strong>Clarifications:</strong> If you're unsure about the size that would best fit you, don't hesitate to reach out to us before finalizing your purchase. We are here to help! Regrettably, we cannot offer refunds based on sizing discrepancies.</li>
+        </ul>
+
+        <h2>Order Modifications:</h2>
+        <p>If you need to modify your order, please contact us immediately. We will do our best to accommodate your requests. However, once your order is out for delivery, changes are no longer feasible.</p>
+
+        <h2>Issues with Your Order:</h2>
+        <p>Your satisfaction is our top priority. If you encounter any issues or are unsatisfied with your order in any way, please contact us. We are committed to ensuring a positive shopping experience for our customers and will strive to resolve any concerns you might have.</p>
+    </section>
+</main>
+
+<footer id="main-footer">
+    <nav>
+        <ul>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="return.html">Return Policy</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+        </ul>
+    </nav>
+    <select id="location" name="location">
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+        <!-- add other options as necessary -->
+    </select>
+</footer>
+</body>
+</html>
