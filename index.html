@@ -6,166 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMPinkMoonlight</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style> 
-
-#siteSearch {
-            width: 100%;  /* Full width on small screens */
-            max-width: 400px;  /* But not more than 400px wide */
-            }
-          
-        
-        .flex-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    
-        .flex-container-center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        #main-header nav ul {
-            display: flex; /* Changes the list items to a row */
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            gap: 15px;
-        }
-        body {
-                display: flex;
-                flex-direction: column; /* Stack children vertically */
-                align-items: center; /* Center children horizontally */
-                margin: 0; /* Remove default body margin */
-                padding-top: 100px; 
-        }
-    
-            #categories {
-                display: flex;
-                justify-content: space-between;
-    }
-    
-    
-            #categories a {
-                flex: 1; /* make each link element take up equal space */
-                margin-right: 10px; /* space between the images */
-    }
-            #categories img {
-                width: 100%; 
-                height: 80%; 
-                object-fit: cover;
-    }
-            #categories a:last-child {
-                margin-right: 0; /* remove the right margin for the last image */
-    }
-    
-            #categories h3 {
-                text-align: center; /* Center the title text */
-    }
-            #categories {
-                margin-bottom: 50px;
-    }
-            #New_Arrivals {
-                margin-top: 50px;
-    }
-            /* New Arrivals styles */
-            #New_Arrivals div {
-                display: flex;
-                justify-content: space-between;
-            }
-    
-            #New_Arrivals article {
-                flex: 1;
-                margin-right: 10px;
-                text-align: center; 
-            }
-    
-            #New_Arrivals article:last-child {
-                margin-right: 0;
-            }
-    
-    
-            #New_Arrivals img {
-                width: 100%;
-                height: 450px;
-            }
-    
-    /* Media queries for responsive design */
-        @media (max-width: 768px) { /* Adjust as needed for the breakpoint */
-            #New_Arrivals img {
-            width: 100%;
-            height: auto;
-        }
-    
-        #New_Arrivals article {
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-    
-        #New_Arrivals div {
-            flex-direction: column;
-        }
-        }
-            #newsletter {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-            }
-            
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-    
-            nav ul li {
-                display: inline;
-                margin-right: 20px;
-            }
-        
-            footer {
-                display: flex;
-                justify-content: space-between;
-                padding: 20px;
-                background-color: #FAF0F4;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                box-sizing: border-box; /* This is crucial! */
-                width: 100%;
-                }
-
-            .banner-buttons {
-                position: absolute;
-                bottom: 10%; 
-                left: 50%; 
-                transform: translateX(-50%);
-                padding: 10px;
-                border-radius: 5px;
-                display: flex;
-                justify-content: space-between;
-                backdrop-filter: blur(5px);
-                background-color: rgba(255, 255, 255, 0.3);
-                width: auto; /* or specify a fixed width if needed */
-            }
-
-    
-            .btn-8 {
-                /* ... other styles ... */
-                width: 200px;  /* fixed width */
-                height: 50px;  /* fixed height */
-                text-align: center;
-                line-height: 30px; /* match the height for vertical centering */
-                overflow: hidden;           
-            }
-
-            #banner {
-                position: relative; /* to establish a stacking context for the absolutely positioned children */
-                overflow: hidden;   /* to handle potential overflow */
-            }
-
-    
-        </style>
-
+    <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
             <header id="main-header">
@@ -269,7 +110,7 @@
         <nav>
             <ul>
                 <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="return.html">Return Policy</a></li>
+                <li><a href="returns.html">Return Policy</a></li>
                 <li><a href="shipping.html">Shipping Policy</a></li>
             </ul>
         </nav>
@@ -282,4 +123,3 @@
     </footer>    
 </body>
 </html>
-
