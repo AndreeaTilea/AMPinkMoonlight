@@ -1,0 +1,131 @@
+#siteSearch {
+    width: 100%;  /* Full width on small screens */
+    max-width: 400px;  /* But not more than 400px wide */
+    }
+
+    @media (min-width: 600px) {
+    /* On screens that are 600px wide or more, make the search bar smaller */
+    #siteSearch {
+    width: 50%;  /* 50% of the container's width */
+    }
+}
+    body {
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center children horizontally */
+        margin: 0; /* Remove default body margin */
+        padding-top: 100px; 
+}
+
+#categories {
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+    margin: 30px 15px 15px 15px; 
+}
+
+#categories img {
+    width:70%;
+    height:450px;
+    border-radius: 4px;
+}
+#categories-title {
+    margin-bottom: 30px;
+}
+
+
+.category {
+    text-align: center;
+    flex: 1;
+    margin: 15px;
+}
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 10%;
+
+}
+
+.product {
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    .products {
+    grid-template-columns: repeat(2, 1fr);
+}
+    .category img {
+    width: 80%;
+}
+}
+
+@media (max-width: 576px) {
+    .products {
+    grid-template-columns: repeat(1, 1fr);
+}
+    .category img {
+    width: 100%;
+}
+}
+
+
+.product img {
+    width: 75%;
+    height: 450px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .products {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 576px) {
+    .products {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FAF0F4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* This is crucial! */
+    width: 100%;
+    }
+    @media (max-width: 768px) {
+    .category {
+    flex-basis: 100%; /* Take full width on smaller screens */
+}
+}

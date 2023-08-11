@@ -1,0 +1,114 @@
+#siteSearch {
+    width: 100%;  /* Full width on small screens */
+    max-width: 400px;  /* But not more than 400px wide */
+    }
+
+header {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #FAF0F4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#main-header nav ul {
+display: flex; 
+list-style-type: none;
+padding: 0;
+margin: 0;
+gap: 15px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    background: linear-gradient(135deg, #FAF0F4 0%, #FFC1C8 100%);
+    margin: 20px 0 0;
+    padding-top: 125px;
+}
+
+main {
+    flex: 1;
+    margin: 1rem;
+}
+
+
+
+.content-wrapper {
+    flex: 1;  
+}
+
+
+#contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+
+#contact-us form {
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+#contact-us form input[type="text"],
+#contact-us form input[type="email"],
+#contact-us form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+#contact-us form textarea {
+    height: 200px;
+}
+
+#contact-us form button {
+    padding: 0.5rem 1rem;
+    background-color: #FF6B98; 
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; 
+}
+
+#contact-us form button:hover {
+    background-color: #FF87A2;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAF0F4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box; /* This is crucial! */
+    }
+
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+    

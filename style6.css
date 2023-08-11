@@ -1,0 +1,110 @@
+ h1,h2 {
+            color: #FF6B98;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            background: linear-gradient(135deg, #FAF0F4 0%, #FFC1C8 100%);
+            margin: 20px 0 0;
+            padding-top: 125px;
+        }
+    
+
+        header input[type="search"] {
+            margin-right: 1rem;
+        }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-family: 'Playfair Display', serif;
+    }
+
+    table, th, td {
+        border: 1px solid #FF9AA2;
+        padding: 10px;
+    }
+
+    thead {
+        background-color: #FFC1C8;
+        font-weight: bold;
+    }
+
+    tfoot {
+        background-color: #FAF0F4;
+    }
+
+    tfoot td {
+        padding: 15px;
+    }
+
+    tfoot ul {
+        margin: 10px;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #FEF0F4;
+    }
+        header nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+        
+        #site-title {
+        margin-bottom: 1rem; /* space between title and search input */
+    }
+        
+        header nav ul li a,
+        footer nav ul li a {
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover,
+        footer nav ul li a:hover {
+            color: #FF9AA2;
+        }
+       
+        @media (min-width: 600px) {
+            #siteSearch {
+                width: 50%; 
+            }
+        }
+
+        .table-container {
+            flex: 1;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            padding: 20px 0;       
+        }
+
+        table {
+            max-width: 90%;          
+            overflow-x: auto;        
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #FAF0F4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            box-sizing: border-box; /* This is crucial! */
+            text-align: center;
+        }
+
+            nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+           
