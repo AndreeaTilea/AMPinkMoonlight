@@ -137,7 +137,11 @@ body {
         background-color: rgba(255, 255, 255, 0.3);
         width: auto; 
     }
-
+    @media only screen and (max-width: 768px) {
+        .banner-buttons {
+          display: none;
+        }
+      }
 
     .btn-8 {
         /* ... other styles ... */
